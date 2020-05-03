@@ -35,11 +35,4 @@ import matplotlib.pyplot as plt
 
 
 
-lst=[(0,4),(2,3),(1,9),(7,0)]
-for i in range(len(lst)):
-    for j in np.arange(i+1,len(lst)):
-        arr1=lst[i]
-        arr2=lst[j]
-        euc_dist=np.sqrt(sum([(arr1[k]-arr2[k])**2 for k in range(len(arr1))]))
-        manh_dist=sum([abs(arr1[k]-arr2[k]) for k in range(len(arr1))])
-        print('p'+str(i+1)+'与p'+str(j+1)+'的欧式距离：'+str(euc_dist)+ ', 曼哈顿距离：' + str(manh_dist))
+print(np.sqrt(0.5))
